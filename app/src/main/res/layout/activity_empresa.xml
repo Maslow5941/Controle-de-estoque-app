@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A5C6D87"
+    tools:context=".Activity.EmpresaActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toobar_voltar_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="389dp"
+        android:layout_height="251dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:paddingStart="10dp"
+        android:text="Bem-vindo à EduTech, especialista em soluções inovadoras para gestão de estoque.
+Oferecemos aplicativos móveis intuitivos e poderosos, projetados para simplificar o controle de estoque de empresas de todos os portes. Com um compromisso central em impulsionar o sucesso dos nossos clientes, proporcionamos uma experiência eficaz e sem complicações.
+Nossos aplicativos destacam-se pela usabilidade amigável, controle completo de estoque, sincronização em nuvem para acesso flexível e relatórios analíticos detalhados. Na EduTech, acreditamos em fornecer ferramentas que capacitam tomadas de decisões informadas. Seja um empreendedor ou uma corporação, nossa missão é oferecer soluções personalizadas para atender às necessidades específicas do seu negócio, impulsionando o crescimento e a eficiência "
+        android:textAlignment="inherit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:srcCompat="@drawable/logos" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:layout_marginTop="12dp"
+        android:background="#A98899E1"
+        android:drawableStart="@drawable/icon_smartphone"
+        android:drawablePadding="-40dp"
+        android:onClick="ligar"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:text="Ligar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
